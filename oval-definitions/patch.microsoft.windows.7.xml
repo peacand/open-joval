@@ -1,0 +1,2144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#windows windows-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:oval-def="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+  <generator>
+    <oval:product_name>The OVAL Repository</oval:product_name>
+    <oval:schema_version>5.10</oval:schema_version>
+    <oval:timestamp>2015-01-09T08:17:27.404-05:00</oval:timestamp>
+  </generator>
+  <definitions>
+    <definition id="oval:org.mitre.oval:def:26419" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Outlook 2002</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Outlook 2002</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Outlook 2002" ref_url="http://support.microsoft.com/lifecycle/?p1=2559"/>
+        <description>Product Microsoft Outlook 2002 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:24.719-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:14.188-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:53.892-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Outlook 2002 is installed" definition_ref="oval:org.mitre.oval:def:5179"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:5179" version="7" class="inventory">
+      <metadata>
+        <title>Microsoft Outlook 2002 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:outlook:2002"/>
+        <description>The application Microsoft Outlook 2002 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2008-03-11T15:12:00">
+              <contributor organization="Secure Elements, Inc.">Sudhir Gandhe</contributor>
+            </submitted>
+            <status_change date="2008-03-12T09:39:05.085-04:00">DRAFT</status_change>
+            <status_change date="2008-03-31T04:00:07.597-04:00">INTERIM</status_change>
+            <status_change date="2008-04-21T04:00:20.686-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:988 - Fixed some regular expressions to conform to the Authoring style guide." date="2011-10-03T15:44:00.952-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-10-03T15:45:02.359-04:00">INTERIM</status_change>
+            <status_change date="2011-10-24T04:00:10.469-04:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:48.853-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:48.853-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:03.680-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:29 - Updating pre-Microsoft Office 2010 content to use windows_view behaviors." date="2012-05-10T14:55:00.075-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2012-05-10T14:57:30.721-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:49.297-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Outlook 2002 is installed" test_ref="oval:org.mitre.oval:tst:1106"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26410" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft SQL Server 2000</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows XP</platform>
+          <product>Microsoft SQL Server 2000</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft SQL Server 2000" ref_url="http://support.microsoft.com/lifecycle/?p1=2852"/>
+        <description>Product Microsoft SQL Server 2000 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:15.303-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:14.089-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:53.637-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft SQL Server 2000 is installed" definition_ref="oval:org.mitre.oval:def:14854"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:14854" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft SQL Server 2000 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows XP</platform>
+          <product>Microsoft SQL Server 2000</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:sql_server:2000"/>
+        <description>Microsoft SQL Server 2000 is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2012-08-21T13:22:34">
+              <contributor organization="SecPod Technologies">SecPod Team</contributor>
+            </submitted>
+            <status_change date="2012-08-21T16:55:27.755-04:00">DRAFT</status_change>
+            <status_change date="2012-09-10T04:00:08.919-04:00">INTERIM</status_change>
+            <status_change date="2012-10-01T04:00:04.723-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="Check if Microsoft SQL Server 2000 is installed" test_ref="oval:org.mitre.oval:tst:80005"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26397" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Visio Viewer 2002</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Visio Viewer 2002</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Visio Viewer 2002" ref_url="http://support.microsoft.com/kb/979860"/>
+        <description>Product Microsoft Visio Viewer 2002 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:20.640-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:13.942-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:52.193-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Visio Viewer 2002 is installed" definition_ref="oval:org.mitre.oval:def:6500"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6500" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft Visio Viewer 2002 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:visio_viewer:2002"/>
+        <description>The application Microsoft Visio Viewer 2002 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-13T13:00:00">
+              <contributor organization="Gideon Technologies, Inc.">Dragos Prisaca</contributor>
+            </submitted>
+            <status_change date="2009-10-22T17:36:52.175-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:01:09.736-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:52.037-05:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:48.790-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:48.790-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:14.361-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Microsoft Visio Viewer 2002 is installed" test_ref="oval:org.mitre.oval:tst:10895"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26389" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Apache HTTP Server 1.3</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Apache</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Apache HTTP Server 1.3" ref_url="http://archive.apache.org/dist/httpd/Announcement1.3.html"/>
+        <description>Product Apache HTTP Server 1.3 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:17.468-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:13.797-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:52.005-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Apache HTTP Server 1.3.x is installed on the system" definition_ref="oval:org.mitre.oval:def:8565"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:8565" version="4" class="inventory">
+      <metadata>
+        <title>Apache HTTP Server 1.3.x is installed on the system</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Apache</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:apache:http_server:1.3"/>
+        <description>Apache HTTP Server 1.3.x is installed on the system</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2010-03-04T17:30:00.000-05:00">
+              <contributor organization="DTCC">J. Daniel Brown</contributor>
+            </submitted>
+            <status_change date="2010-03-11T10:52:13.187-05:00">DRAFT</status_change>
+            <status_change date="2010-05-17T04:01:39.466-04:00">INTERIM</status_change>
+            <status_change date="2010-06-07T04:01:24.435-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:1436 - vulnerabilities for VMware and inventories for VMware Workstation, VMware View and VMware Player." date="2013-06-21T12:00:00.019-04:00">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </modified>
+            <status_change date="2013-06-21T12:13:28.966-04:00">INTERIM</status_change>
+            <status_change date="2013-07-08T04:03:01.221-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="Check for the Apache HTTP Server 1.3 installation." test_ref="oval:org.mitre.oval:tst:20454"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26386" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Publisher 2003</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Publisher 2003</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Publisher 2003" ref_url="http://support.microsoft.com/lifecycle/?p1=2527"/>
+        <description>Product Microsoft Publisher 2003 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:22.156-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:13.712-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:51.888-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Publisher 2003 is installed" definition_ref="oval:org.mitre.oval:def:239"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:239" version="5" class="inventory">
+      <metadata>
+        <title>Microsoft Publisher 2003 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Publisher 2003</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:publisher:2003"/>
+        <description>The application Microsoft Publisher 2003 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2006-09-21T07:56:35">
+              <contributor organization="ThreatGuard, Inc.">Robert L. Hollis</contributor>
+            </submitted>
+            <status_change date="2006-09-22T20:15:00.000-04:00">DRAFT</status_change>
+            <status_change date="2006-10-07T09:15:44.565-04:00">INTERIM</status_change>
+            <status_change date="2006-10-24T09:15:51.748-04:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:58.806-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:58.806-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:01.753-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:158 - Updating pre-Microsoft Office 2010 content to use windows_view behaviors." date="2012-05-10T14:55:00.075-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2012-05-10T14:57:35.074-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:34.468-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Publisher 2003 is installed" test_ref="oval:org.mitre.oval:tst:24"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26371" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Acrobat 7</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat 7</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Acrobat 7" ref_url="http://blogs.adobe.com/adobereader/2009/12/adobe_reader_and_acrobat_versi.html"/>
+        <description>Product Adobe Acrobat 7 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:14.644-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:13.207-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:49.653-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Acrobat 7 Series is installed" definition_ref="oval:org.mitre.oval:def:6213"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6213" version="7" class="inventory">
+      <metadata>
+        <title>Adobe Acrobat 7 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat:7" source="CPE"/>
+        <description>Adobe Acrobat 7 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:31.340-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:00:40.911-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:25.737-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6213 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:43.988-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:38.826-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5564 - Updated criterion comments to align with test comments, corrected version numbers in test comments, changed numerous occurrences of 'Reader' to 'Acrobat', added '$' to the end of regular expressions, removed duplicate variables and objects, and removed trailing '\' from paths." date="2011-08-01T07:18:00.114-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-08-01T07:40:12.506-04:00">INTERIM</status_change>
+            <status_change date="2011-08-22T04:01:18.261-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6213 - Updates to Adobe Acrobat and Reader on Windows to return false rather than error on several checks. New Inventory and Vulnerability Definitions for Reader and Acrobat." date="2013-01-22T14:48:00.343-05:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2013-01-22T15:41:57.931-05:00">INTERIM</status_change>
+            <status_change date="2013-02-11T04:02:58.912-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Acrobat 7.x version is installed" test_ref="oval:org.mitre.oval:tst:11047"/>
+        <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\7.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:80632"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26343" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Works 9</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Microsoft Works 9</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Works 9" ref_url="http://support.microsoft.com/lifecycle/?p1=12025"/>
+        <description>Product Microsoft Works 9 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:16.381-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:12.038-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:46.996-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Works 9.0 is installed" definition_ref="oval:org.mitre.oval:def:6784"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6784" version="1" class="inventory">
+      <metadata>
+        <title>Microsoft Works 9.0 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Microsoft Works 9</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:works:9"/>
+        <description>The application Microsoft Works 9.0 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-12-10T17:00:00">
+              <contributor organization="DTCC">J. Daniel Brown</contributor>
+            </submitted>
+            <status_change date="2009-12-11T11:37:18.534-05:00">DRAFT</status_change>
+            <status_change date="2009-12-28T04:00:40.792-05:00">INTERIM</status_change>
+            <status_change date="2010-01-18T04:00:19.973-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Works 9.0 is installed" test_ref="oval:org.mitre.oval:tst:10869"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26340" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Acrobat 8</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat 8</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Acrobat 8" ref_url="http://blogs.adobe.com/adobereader/2011/09/adobe-reader-and-acrobat-version-8-end-of-support.html"/>
+        <description>Product Adobe Acrobat 8 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:13.616-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:11.933-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:46.784-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Acrobat 8 Series is installed" definition_ref="oval:org.mitre.oval:def:6452"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6452" version="7" class="inventory">
+      <metadata>
+        <title>Adobe Acrobat 8 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat:8" source="CPE"/>
+        <description>Adobe Acrobat 8 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:31.586-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:01:01.504-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:43.972-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5266 - Anchored regular expression" date="2011-02-22T12:51:00.249-05:00">
+              <contributor organization="SecPod Technologies">Preeti Subramanian</contributor>
+            </modified>
+            <status_change date="2011-02-22T12:51:56.405-05:00">INTERIM</status_change>
+            <status_change date="2011-03-14T04:00:54.586-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6452 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:38.933-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:39.903-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6452 - Updates to Adobe Acrobat and Reader on Windows to return false rather than error on several checks. New Inventory and Vulnerability Definitions for Reader and Acrobat." date="2013-01-22T14:48:00.343-05:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2013-01-22T15:44:19.096-05:00">INTERIM</status_change>
+            <status_change date="2013-02-11T04:03:11.935-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Acrobat 8.x version is installed" test_ref="oval:org.mitre.oval:tst:10955"/>
+        <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\8.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:80655"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26323" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Office XP</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Office XP</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Office XP" ref_url="http://support.microsoft.com/lifecycle/?p1=2533"/>
+        <description>Product Microsoft Office XP not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:15.840-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:11.681-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:46.209-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Office XP is installed" definition_ref="oval:org.mitre.oval:def:663"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:663" version="11" class="inventory">
+      <metadata>
+        <title>Microsoft Office XP is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:office:xp"/>
+        <description>The application Microsoft Office XP is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2006-07-25T12:05:33">
+              <contributor organization="ThreatGuard, Inc.">Robert L. Hollis</contributor>
+            </submitted>
+            <status_change date="2006-10-07T09:15:51.244-04:00">INTERIM</status_change>
+            <status_change date="2006-10-24T09:15:58.628-04:00">ACCEPTED</status_change>
+            <modified comment="Added anchor to regex in obj:1339" date="2007-04-23T12:05:00.247-04:00">
+              <contributor organization="The MITRE Corporation">Jonathan Baker</contributor>
+            </modified>
+            <status_change date="2007-04-23T12:26:29.609-04:00">INTERIM</status_change>
+            <modified comment="Added CPE reference." date="2007-04-30T07:48:00.390-04:00">
+              <contributor organization="The MITRE Corporation">Jonathan Baker</contributor>
+            </modified>
+            <status_change date="2007-05-23T15:05:49.843-04:00">ACCEPTED</status_change>
+            <modified comment="Now detects the non-OEM versions of Office XP." date="2008-11-10T10:51:00.927-05:00">
+              <contributor organization="Secure Elements, Inc.">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2008-11-10T10:57:34.946-05:00">INTERIM</status_change>
+            <status_change date="2008-12-01T04:00:19.113-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:2179 - Fixed some regular expressions to conform to the Authoring style guide." date="2011-10-03T15:44:00.952-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-10-03T15:45:21.258-04:00">INTERIM</status_change>
+            <status_change date="2011-10-24T04:00:27.403-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:1339 - Fixed several false positives by setting negate = true.  Also fixed several style issues." date="2011-12-28T21:13:00.551-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2011-12-28T21:21:41.130-05:00">INTERIM</status_change>
+            <status_change date="2012-01-16T04:03:18.840-05:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:58.775-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:58.775-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:17.314-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:4586 - modified comments" date="2014-02-28T15:13:00.247-05:00">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </modified>
+            <status_change date="2014-02-28T15:16:15.050-05:00">INTERIM</status_change>
+            <status_change date="2014-03-17T04:00:30.146-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria operator="OR">
+        <criterion comment="Microsoft Office XP OEM is installed" test_ref="oval:org.mitre.oval:tst:2327"/>
+        <criterion comment="Microsoft Office XP is installed" test_ref="oval:org.mitre.oval:tst:9294"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26251" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft InfoPath 2003</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft InfoPath 2003</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft InfoPath 2003" ref_url="http://support.microsoft.com/lifecycle/?p1=2515"/>
+        <description>Product Microsoft InfoPath 2003 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:13.917-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:11.111-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:43.254-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft InfoPath 2003 is installed" definition_ref="oval:org.mitre.oval:def:7304"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:7304" version="7" class="inventory">
+      <metadata>
+        <title>Microsoft InfoPath 2003 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft InfoPath 2003</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:infopath:2003"/>
+        <description>The application Microsoft InfoPath 2003 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2010-06-08T13:00:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </submitted>
+            <status_change date="2010-06-14T11:32:15.159-04:00">DRAFT</status_change>
+            <status_change date="2010-06-29T11:49:41.996-04:00">INTERIM</status_change>
+            <status_change date="2010-07-19T04:00:40.169-04:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:24:07.056-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:24:07.056-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:53.761-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:12292 - Updating pre-Microsoft Office 2010 content to use windows_view behaviors." date="2012-05-10T14:55:00.075-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2012-05-10T14:57:24.838-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:02:26.890-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="InfoPath 2003 is installed" test_ref="oval:org.mitre.oval:tst:27539"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26229" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for MySQL Server 5.0</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <product>MySQL Server 5.0</product>
+        </affected>
+        <reference source="VENDOR" ref_id="MySQL Server 5.0" ref_url="http://dev.mysql.com/doc/refman/5.0/en/"/>
+        <description>Product MySQL Server 5.0 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:17.289-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:10.697-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:42.669-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="MySQL 5.0 is installed" definition_ref="oval:org.mitre.oval:def:8282"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:8282" version="9" class="inventory">
+      <metadata>
+        <title>MySQL 5.0 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows 8</platform>
+          <platform>Microsoft Windows 8.1</platform>
+          <platform>Microsoft Windows Server 2012</platform>
+          <platform>Microsoft Windows Server 2012 R2</platform>
+          <product>MySQL Server 5.0</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:mysql:mysql:5.0"/>
+        <description>MySQL Server 5.0 is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2010-01-22T17:00:00.000-05:00">
+              <contributor organization="DTCC">J. Daniel Brown</contributor>
+            </submitted>
+            <status_change date="2010-01-27T13:49:17.724-05:00">DRAFT</status_change>
+            <status_change date="2010-02-15T04:00:08.668-05:00">INTERIM</status_change>
+            <status_change date="2010-03-08T04:00:14.262-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:var:349 - Removed the trailing \ from all local_variables that are used as paths in a file_object" date="2011-08-03T08:25:00.425-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-08-03T08:29:49.357-04:00">INTERIM</status_change>
+            <status_change date="2011-08-22T04:02:49.585-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:911 - obj/ste updates to conform to authoring style guide" date="2013-03-26T09:53:00.500-04:00">
+              <contributor organization="G2, Inc.">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2013-03-26T09:56:13.720-04:00">INTERIM</status_change>
+            <status_change date="2013-04-15T04:00:31.338-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:11786 - new inventory and platforms for MySQL 5.6" date="2014-09-11T08:17:00.634-04:00">
+              <contributor organization="ALTX-SOFT">Evgeniy Pavlov</contributor>
+            </modified>
+            <status_change date="2014-09-11T08:19:27.923-04:00">INTERIM</status_change>
+            <status_change date="2014-09-29T04:00:27.722-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:11992 - Added 32-bit windows view" date="2014-10-24T13:20:00.601-04:00">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </modified>
+            <status_change date="2014-10-24T13:20:47.419-04:00">INTERIM</status_change>
+            <status_change date="2014-11-10T04:02:36.551-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="MySQL 5.0 is installed" test_ref="oval:org.mitre.oval:tst:20481"/>
+        <criterion comment="mysqld.exe or mysqld-nt.exe exists" test_ref="oval:org.mitre.oval:tst:21031"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26228" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Excel 2002</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Microsoft Excel 2002</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Excel 2002" ref_url="http://support.microsoft.com/lifecycle/?p1=1743"/>
+        <description>Product Microsoft Excel 2002 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:12.013-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:10.634-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:42.566-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Excel 2002 is installed" definition_ref="oval:org.mitre.oval:def:473"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:473" version="7" class="inventory">
+      <metadata>
+        <title>Microsoft Excel 2002 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Microsoft Excel 2002</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:excel:2002"/>
+        <description>The application Microsoft Excel 2002 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2006-07-25T12:05:33">
+              <contributor organization="ThreatGuard, Inc.">Robert L. Hollis</contributor>
+            </submitted>
+            <status_change date="2006-07-25T12:05:33">DRAFT</status_change>
+            <modified date="2006-08-28T12:00:00.000-04:00" comment="modified obj 1377 to use xsi:nil instead of a .* pattern match">
+              <contributor organization="Centennial Software">John Hoyland</contributor>
+            </modified>
+            <status_change date="2006-09-27T12:29:27.866-04:00">INTERIM</status_change>
+            <status_change date="2006-10-16T15:58:41.687-04:00">ACCEPTED</status_change>
+            <modified comment="Added CPE reference" date="2007-05-01T10:21:00.420-04:00">
+              <contributor organization="The MITRE Corporation">Jonathan Baker</contributor>
+            </modified>
+            <status_change date="2007-05-01T10:23:59.442-04:00">INTERIM</status_change>
+            <status_change date="2007-05-23T15:05:46.715-04:00">ACCEPTED</status_change>
+            <modified comment="Added Microsoft Excel 2002 product information. Removed Microsoft reference" date="2009-06-01T16:05:28.035-04:00">
+              <contributor organization="The MITRE Corporation">Brendan Miles</contributor>
+            </modified>
+            <status_change date="2009-06-08T04:00:40.203-04:00">INTERIM</status_change>
+            <status_change date="2009-06-29T04:00:24.637-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:1377 - Updating Microsoft Excel content to utilize the windows_view behavior." date="2012-05-10T14:07:00.113-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2012-05-10T14:24:35.167-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:45.928-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:473 - synched def:473 product list with def:7888" date="2013-05-14T09:57:00.698-04:00">
+              <contributor organization="The MITRE Corporation">Chris Coffin</contributor>
+            </modified>
+            <status_change date="2013-05-14T10:00:08.452-04:00">INTERIM</status_change>
+            <status_change date="2013-06-03T04:03:31.487-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Excel 2002 is installed" test_ref="oval:org.mitre.oval:tst:2420"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26209" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft BizTalk Server 2002</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft BizTalk Server 2002</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft BizTalk Server 2002" ref_url="http://support.microsoft.com/lifecycle/?p1=1443"/>
+        <description>Product Microsoft BizTalk Server 2002 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:22.429-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:10.394-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:41.906-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft BizTalk Server 2002 is installed" definition_ref="oval:org.mitre.oval:def:15292"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:15292" version="3" class="inventory">
+      <metadata>
+        <title>Microsoft BizTalk Server 2002 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft BizTalk Server 2002</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:biztalk_server:2002"/>
+        <description>The application Microsoft BizTalk Server 2002 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2012-04-10T13:00:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </submitted>
+            <status_change date="2012-04-16T20:32:52.876-04:00">DRAFT</status_change>
+            <status_change date="2012-05-07T04:01:50.759-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:04.445-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Microsoft BizTalk Server 2002 is installed" test_ref="oval:org.mitre.oval:tst:78902"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26155" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Reader 9</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader 9</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Reader 9" ref_url="http://helpx.adobe.com/acrobat/kb/end-support-acrobat-8-reader.html"/>
+        <description>Product Adobe Reader 9 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:12.438-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:10.058-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:39.275-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Reader 9 Series is installed" definition_ref="oval:org.mitre.oval:def:6523"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6523" version="9" class="inventory">
+      <metadata>
+        <title>Adobe Reader 9 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat_reader:9" source="CPE"/>
+        <description>Adobe Reader 9 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:31.087-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:01:12.306-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:55.515-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5659 - Anchored regular expression" date="2011-02-22T12:51:00.249-05:00">
+              <contributor organization="SecPod Technologies">Preeti Subramanian</contributor>
+            </modified>
+            <status_change date="2011-02-22T12:51:52.553-05:00">INTERIM</status_change>
+            <status_change date="2011-03-14T04:00:55.303-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6523 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:40.578-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:40.326-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6523 - Corrected CPE name." date="2011-10-27T10:38:00.625-04:00">
+              <contributor organization="Quintechssential">Scott Quint</contributor>
+            </modified>
+            <status_change date="2011-10-27T10:40:28.360-04:00">INTERIM</status_change>
+            <status_change date="2011-11-14T04:01:03.372-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:7175 - Fix to Adobe Reader 9 Inventory Definition to return false when not installed instead of error." date="2012-12-27T23:44:00.907-05:00">
+              <contributor organization="ALTX-SOFT">Sergey Artykhov</contributor>
+            </modified>
+            <status_change date="2012-12-27T23:50:29.831-05:00">INTERIM</status_change>
+            <status_change date="2013-01-14T04:03:16.183-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Reader 9.x version is installed" test_ref="oval:org.mitre.oval:tst:10300"/>
+        <criterion comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\9.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:79767"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26102" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Commerce Server 2002</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Commerce Server 2002</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Commerce Server 2002" ref_url="http://support.microsoft.com/lifecycle/?p1=1552"/>
+        <description>Product Microsoft Commerce Server 2002 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:17.792-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:09.981-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:38.203-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Commerce Server 2002 is installed" definition_ref="oval:org.mitre.oval:def:15304"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:15304" version="5" class="inventory">
+      <metadata>
+        <title>Microsoft Commerce Server 2002 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Commerce Server 2002</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:commerce_server:2002"/>
+        <description>The application Microsoft Commerce Server 2002 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2012-04-10T13:00:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </submitted>
+            <status_change date="2012-04-16T20:32:53.245-04:00">DRAFT</status_change>
+            <status_change date="2012-05-07T04:01:52.675-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:05.892-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:23760 - vulnerabilities for VMware and inventories for VMware Workstation, VMware View and VMware Player." date="2013-06-21T12:00:00.019-04:00">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </modified>
+            <status_change date="2013-06-21T12:13:22.474-04:00">INTERIM</status_change>
+            <status_change date="2013-07-08T04:01:24.957-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Microsoft Commerce Server 2002 is installed" test_ref="oval:org.mitre.oval:tst:79858"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26094" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for TrueCrypt</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>TrueCrypt</product>
+        </affected>
+        <reference source="VENDOR" ref_id="TrueCrypt" ref_url="http://truecrypt.sourceforge.net"/>
+        <description>Product TrueCrypt not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:25.207-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:09.839-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:38.021-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="TrueCrypt is installed" definition_ref="oval:org.mitre.oval:def:24627"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:24627" version="3" class="inventory">
+      <metadata>
+        <title>TrueCrypt is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>TrueCrypt</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:truecrypt_foundation:truecrypt"/>
+        <description>TrueCrypt is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-04-16T08:31:03">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-04-25T12:58:14.814-04:00">DRAFT</status_change>
+            <status_change date="2014-05-12T04:00:58.700-04:00">INTERIM</status_change>
+            <status_change date="2014-06-02T04:00:18.224-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="TrueCrypt is installed" test_ref="oval:org.mitre.oval:tst:113185"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:26002" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Reader 8</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader 8</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Reader 8" ref_url="http://blogs.adobe.com/adobereader/2011/09/adobe-reader-and-acrobat-version-8-end-of-support.html"/>
+        <description>Product Adobe Reader 8 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:15.021-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:09.597-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:36.065-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Reader 8 Series is installed" definition_ref="oval:org.mitre.oval:def:6390"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6390" version="9" class="inventory">
+      <metadata>
+        <title>Adobe Reader 8 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat_reader:8" source="CPE"/>
+        <description>Adobe Reader 8 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:30.805-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:00:52.669-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:37.240-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5266 - Anchored regular expression" date="2011-02-22T12:51:00.249-05:00">
+              <contributor organization="SecPod Technologies">Preeti Subramanian</contributor>
+            </modified>
+            <status_change date="2011-02-22T12:51:56.108-05:00">INTERIM</status_change>
+            <status_change date="2011-03-14T04:00:54.271-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6390 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:38.248-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:39.539-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6390 - Corrected CPE name." date="2011-10-27T10:38:00.044-04:00">
+              <contributor organization="Quintechssential">Scott Quint</contributor>
+            </modified>
+            <status_change date="2011-10-27T10:39:37.905-04:00">INTERIM</status_change>
+            <status_change date="2011-11-14T04:01:01.125-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:6272 - Fix to Adobe Reader 7,8,10 Inventory Definitions to return false when not installed instead of error." date="2013-01-22T14:35:00.332-05:00">
+              <contributor organization="ALTX-SOFT">Sergey Artykhov</contributor>
+            </modified>
+            <status_change date="2013-01-22T14:42:57.973-05:00">INTERIM</status_change>
+            <status_change date="2013-02-11T04:03:09.010-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Reader 8.x version is installed" test_ref="oval:org.mitre.oval:tst:10621"/>
+        <criterion comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\8.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:80780"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:25955" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Acrobat 9</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat 9</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Acrobat 9" ref_url="http://helpx.adobe.com/acrobat/kb/end-support-acrobat-8-reader.html"/>
+        <description>Product Adobe Acrobat 9 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:23.313-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:09.381-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:35.438-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Acrobat 9 Series is installed" definition_ref="oval:org.mitre.oval:def:6013"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6013" version="7" class="inventory">
+      <metadata>
+        <title>Adobe Acrobat 9 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Acrobat</product>
+        </affected>
+        <reference ref_id="cpe:/a:adobe:acrobat:9" source="CPE"/>
+        <description>Adobe Acrobat 9 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:31.826-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:00:32.561-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:17.931-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5659 - Anchored regular expression" date="2011-02-22T12:51:00.249-05:00">
+              <contributor organization="SecPod Technologies">Preeti Subramanian</contributor>
+            </modified>
+            <status_change date="2011-02-22T12:51:52.267-05:00">INTERIM</status_change>
+            <status_change date="2011-03-14T04:00:53.543-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6013 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:44.597-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:38.467-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:7189 - Updates to Adobe Acrobat and Reader on Windows to return false rather than error on several checks. New Inventory and Vulnerability Definitions for Reader and Acrobat." date="2013-01-22T14:48:00.343-05:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2013-01-22T15:43:15.466-05:00">INTERIM</status_change>
+            <status_change date="2013-02-11T04:02:48.480-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria operator="AND">
+        <criterion comment="Adobe Acrobat 9.x version is installed" test_ref="oval:org.mitre.oval:tst:10896"/>
+        <criterion comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\9.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:80761"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:25777" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Adobe Reader 7</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader 7</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Adobe Reader 7" ref_url="http://blogs.adobe.com/adobereader/2009/12/adobe_reader_and_acrobat_versi.html"/>
+        <description>Product Adobe Reader 7 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-07T14:38:51">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:09.350-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:08.761-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:33.307-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Adobe Reader 7 Series is installed" definition_ref="oval:org.mitre.oval:def:6377"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:6377" version="7" class="inventory">
+      <metadata>
+        <title>Adobe Reader 7 Series is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows 7</platform>
+          <product>Adobe Reader</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:adobe:reader:7"/>
+        <description>Adobe Reader 7 Series is installed</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2009-10-23T03:25:55">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </submitted>
+            <status_change date="2009-10-23T15:03:30.438-04:00">DRAFT</status_change>
+            <status_change date="2009-11-09T04:00:52.128-05:00">INTERIM</status_change>
+            <status_change date="2009-11-30T04:00:36.573-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6377 - Modified inventory definition CPE IDs to match the CPE IDs found in the official CPE dictionary" date="2011-03-29T13:53:00.154-04:00">
+              <contributor organization="Symantec Corporation">Josh Turpin</contributor>
+            </modified>
+            <status_change date="2011-03-29T13:54:39.995-04:00">INTERIM</status_change>
+            <status_change date="2011-04-18T04:00:39.196-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:5564 - Updated criterion comments to align with test comments, corrected version numbers in test comments, changed numerous occurrences of 'Reader' to 'Acrobat', added '$' to the end of regular expressions, removed duplicate variables and objects, and removed trailing '\' from paths." date="2011-08-01T07:18:00.114-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-08-01T07:40:12.173-04:00">INTERIM</status_change>
+            <status_change date="2011-08-22T04:01:24.447-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:def:6377 - Fix to Adobe Reader 7,8,10 Inventory Definitions to return false when not installed instead of error." date="2013-01-22T14:31:00.389-05:00">
+              <contributor organization="ALTX-SOFT">Sergey Artykhov</contributor>
+            </modified>
+            <status_change date="2013-01-22T14:35:11.507-05:00">INTERIM</status_change>
+            <status_change date="2013-02-11T04:03:08.163-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Adobe Reader 7.x version is installed" test_ref="oval:org.mitre.oval:tst:10977"/>
+        <criterion comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\7.0\Installer!ENU_GUID exists" test_ref="oval:org.mitre.oval:tst:80693"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:25691" version="3" class="patch">
+      <metadata>
+        <title>End of life cycle for Microsoft Outlook 2003</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Outlook 2003</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Outlook 2003" ref_url="http://support.microsoft.com/lifecycle/?p1=2520"/>
+        <description>Product Microsoft Outlook 2003 not longer supported</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-08-04T14:38:52">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </submitted>
+            <status_change date="2014-08-13T10:30:22.994-04:00">DRAFT</status_change>
+            <status_change date="2014-09-01T04:03:08.648-04:00">INTERIM</status_change>
+            <status_change date="2014-09-22T04:00:33.170-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Outlook 2003 is installed" definition_ref="oval:org.mitre.oval:def:5505"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:5505" version="7" class="inventory">
+      <metadata>
+        <title>Microsoft Outlook 2003 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:outlook:2003"/>
+        <description>The application Microsoft Outlook 2003 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2008-03-11T15:12:00">
+              <contributor organization="Secure Elements, Inc.">Sudhir Gandhe</contributor>
+            </submitted>
+            <status_change date="2008-03-12T09:39:05.655-04:00">DRAFT</status_change>
+            <status_change date="2008-03-31T04:00:11.181-04:00">INTERIM</status_change>
+            <status_change date="2008-04-21T04:00:22.360-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:826 - Fixed some regular expressions to conform to the Authoring style guide." date="2011-10-03T15:44:00.952-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2011-10-03T15:45:17.269-04:00">INTERIM</status_change>
+            <status_change date="2011-10-24T04:00:11.688-04:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:48.837-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:48.837-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:05.433-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:692 - Updating pre-Microsoft Office 2010 content to use windows_view behaviors." date="2012-05-10T14:55:00.075-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </modified>
+            <status_change date="2012-05-10T14:57:36.651-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:54.611-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Outlook 2003 is installed" test_ref="oval:org.mitre.oval:tst:922"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:24350" version="3" class="patch">
+      <metadata>
+        <title>Microsoft Office 2003 end of support</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Office 2003</product>
+        </affected>
+        <reference source="VENDOR" ref_id="Microsoft Office 2003" ref_url="http://office.microsoft.com/en-us/help/support-is-ending-for-office-2003-HA103306332.aspx"/>
+        <description>Microsoft Office 2003 is not supported. It should be upgraded to a newer version of Office to get continuing support and updates.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2014-04-07T08:31:03">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </submitted>
+            <status_change date="2014-04-10T08:45:03.833-04:00">DRAFT</status_change>
+            <status_change date="2014-04-28T04:07:33.722-04:00">INTERIM</status_change>
+            <status_change date="2014-05-19T04:00:14.207-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft Office 2003 is installed" definition_ref="oval:org.mitre.oval:def:233"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:233" version="10" class="inventory">
+      <metadata>
+        <title>Microsoft Office 2003 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 2000</platform>
+          <platform>Microsoft Windows XP</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <product>Microsoft Office 2003</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:office:2003"/>
+        <description>The application Microsoft Office 2003 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2006-07-25T12:05:33">
+              <contributor organization="ThreatGuard, Inc.">Robert L. Hollis</contributor>
+            </submitted>
+            <status_change date="2006-10-07T09:15:44.461-04:00">INTERIM</status_change>
+            <status_change date="2006-10-24T09:15:51.460-04:00">ACCEPTED</status_change>
+            <modified comment="Added CPE reference." date="2007-04-30T07:48:00.964-04:00">
+              <contributor organization="The MITRE Corporation">Jonathan Baker</contributor>
+            </modified>
+            <status_change date="2007-04-30T07:52:13.988-04:00">INTERIM</status_change>
+            <modified comment="Corrected ste:449 to use a pattern match and allow a major version of 11 and not check for other version components. Implemented by Jon Baker of the MITRE Corporation." date="2007-05-07T08:38:00.445-04:00">
+              <contributor organization="PatchLink Corporation">Ken Lassesen</contributor>
+            </modified>
+            <status_change date="2007-05-23T15:05:40.917-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:ste:449 - Made updates to MS09-073 - In ste:5428 corrected the version and updated comments to test ID tst:10574 &amp; authoring guide updates." date="2011-08-31T17:33:00.787-04:00">
+              <contributor organization="SecPod Technologies">Rachana Shetty</contributor>
+            </modified>
+            <status_change date="2011-08-31T17:35:06.675-04:00">INTERIM</status_change>
+            <status_change date="2011-09-15T10:59:31.916-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:418 - Corrected registry key" date="2011-10-28T22:29:00.246-04:00">
+              <contributor organization="SecPod Technologies">Chandan S</contributor>
+            </modified>
+            <status_change date="2011-10-28T22:30:11.017-04:00">INTERIM</status_change>
+            <status_change date="2011-11-14T04:00:19.697-05:00">ACCEPTED</status_change>
+            <status_change date="2012-03-05T14:23:58.806-05:00">INTERIM</status_change>
+            <modified comment="Added Windows Server 2008 R2 platform" date="2012-03-05T14:23:58.806-05:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-03-26T04:03:01.199-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:418 - Updated registry object and corresponding state collected while checking if Microsoft Office 2003 is installed." date="2012-05-10T15:39:00.923-04:00">
+              <contributor organization="Symantec Corporation">Dragos Prisaca</contributor>
+            </modified>
+            <status_change date="2012-05-10T15:41:47.812-04:00">INTERIM</status_change>
+            <status_change date="2012-05-28T04:01:33.112-04:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="Microsoft Office 2003 is installed" test_ref="oval:org.mitre.oval:tst:487"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:20826" version="3" class="patch">
+      <metadata>
+        <title>Microsoft SQL Server 2012 Service Pack 1 x86 should be installed (KB2674319)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows XP</platform>
+          <product>Microsoft SQL Server 2008</product>
+        </affected>
+        <reference source="VENDOR" ref_id="SQLServer2012SP1-KB2674319-x86-ENU.exe"/>
+        <reference source="Microsoft" ref_id="KB2674319" ref_url="http://www.microsoft.com/en-us/download/details.aspx?id=35575"/>
+        <description>Microsoft SQL Server 2012 Service Pack 1 x86 should be installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2013-12-24T13:03:37">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </submitted>
+            <status_change date="2013-12-30T09:19:57.157-05:00">DRAFT</status_change>
+            <status_change date="2014-01-20T04:01:12.190-05:00">INTERIM</status_change>
+            <status_change date="2014-02-10T04:00:18.793-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <extend_definition comment="Microsoft SQL Server 2012 is installed" definition_ref="oval:org.mitre.oval:def:15044"/>
+        <criterion comment="Check if HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version (32-bit) is less than 11.1.3000.0" test_ref="oval:org.mitre.oval:tst:90161"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:20814" version="3" class="patch">
+      <metadata>
+        <title>Microsoft SQL Server 2012 Service Pack 1 x64 should be installed (KB2674319)</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2003</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <platform>Microsoft Windows XP</platform>
+          <product>Microsoft SQL Server 2008</product>
+        </affected>
+        <reference source="VENDOR" ref_id="SQLServer2012SP1-KB2674319-x64-ENU.exe"/>
+        <reference source="Microsoft" ref_id="KB2674319" ref_url="http://www.microsoft.com/en-us/download/details.aspx?id=35575"/>
+        <description>Microsoft SQL Server 2012 Service Pack 1 x64 should be installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2013-12-24T13:03:37">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </submitted>
+            <status_change date="2013-12-30T09:19:56.933-05:00">DRAFT</status_change>
+            <status_change date="2014-01-20T04:01:11.827-05:00">INTERIM</status_change>
+            <status_change date="2014-02-10T04:00:18.672-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="a version of Windows for the x64 architecture is installed" test_ref="oval:org.mitre.oval:tst:3653"/>
+        <extend_definition comment="Microsoft SQL Server 2012 is installed" definition_ref="oval:org.mitre.oval:def:15044"/>
+        <criterion comment="Check if HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version is less than 11.1.3000.0" test_ref="oval:org.mitre.oval:tst:89569"/>
+      </criteria>
+    </definition>
+    <definition id="oval:org.mitre.oval:def:15044" version="13" class="inventory">
+      <metadata>
+        <title>Microsoft SQL Server 2012 is installed</title>
+        <affected family="windows">
+          <platform>Microsoft Windows 7</platform>
+          <platform>Microsoft Windows Server 2008</platform>
+          <platform>Microsoft Windows Server 2008 R2</platform>
+          <platform>Microsoft Windows Vista</platform>
+          <product>Microsoft SQL Server 2012</product>
+        </affected>
+        <reference source="CPE" ref_id="cpe:/a:microsoft:sql_server:2012"/>
+        <description>Microsoft SQL Server 2012 is installed.</description>
+        <oval_repository>
+          <dates>
+            <submitted date="2012-04-03T15:45:46.478-04:00">
+              <contributor organization="G2, Inc.">Shane Shaffer</contributor>
+            </submitted>
+            <status_change date="2012-04-05T07:32:51.226-04:00">DRAFT</status_change>
+            <status_change date="2012-04-23T04:00:11.920-04:00">INTERIM</status_change>
+            <status_change date="2012-05-14T04:00:05.962-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:11792 - SQL Server 32-bit &amp; 64-bit issues." date="2013-09-13T13:52:00.521-04:00">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </modified>
+            <status_change date="2013-09-13T13:53:44.236-04:00">INTERIM</status_change>
+            <status_change date="2013-09-30T04:00:26.201-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:26798 - &quot;MSSQL&quot; added to object regex to narrow search" date="2014-01-31T16:01:00.799-05:00">
+              <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+            </modified>
+            <status_change date="2014-01-31T16:02:49.104-05:00">INTERIM</status_change>
+            <status_change date="2014-02-17T04:00:10.373-05:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:26674 - Added criteria for 64 bit" date="2014-08-15T10:18:00.371-04:00">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </modified>
+            <status_change date="2014-08-15T10:20:20.172-04:00">INTERIM</status_change>
+            <status_change date="2014-09-01T04:01:21.039-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:26798 - Fixed/New Inventory Definitions, and fixed Vulnerability Definitions for Microsoft SQL Server 2012 and 2014." date="2014-10-10T18:35:00.565-04:00">
+              <contributor organization="ALTX-SOFT">Evgeniy Pavlov</contributor>
+            </modified>
+            <status_change date="2014-10-10T19:58:52.769-04:00">INTERIM</status_change>
+            <status_change date="2014-10-27T04:00:10.141-04:00">ACCEPTED</status_change>
+            <modified comment="EDITED oval:org.mitre.oval:obj:26674 - Modified tests which check SQL Server 2005 Service Packs. The specific version of SQL Server was checked instead of diapason. Now new states were added which mark high limit of SP and operation=&quot;greater than or equal&quot; was add to the old states" date="2014-10-29T12:41:00.258-04:00">
+              <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+            </modified>
+            <status_change date="2014-10-29T12:42:37.324-04:00">INTERIM</status_change>
+            <status_change date="2014-11-17T04:00:17.643-05:00">ACCEPTED</status_change>
+          </dates>
+          <status>ACCEPTED</status>
+        </oval_repository>
+      </metadata>
+      <criteria>
+        <criterion comment="SQL Server instances with version greater than 11.0.0.0 and less than 12.0.0.0 exist" test_ref="oval:org.mitre.oval:tst:79659"/>
+      </criteria>
+    </definition>
+  </definitions>
+  <tests>
+    <registry_test id="oval:org.mitre.oval:tst:1106" version="4" comment="Outlook 2002 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:29"/>
+      <state state_ref="oval:org.mitre.oval:ste:988"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80005" version="1" comment="Check if Microsoft SQL Server 2000 is installed" check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:23649"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10895" version="1" comment="Microsoft Visio Viewer 2002 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7029"/>
+      <state state_ref="oval:org.mitre.oval:ste:5417"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:20454" version="2" comment="Check for the Apache HTTP Server 1.3 installation." check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:1436"/>
+      <state state_ref="oval:org.mitre.oval:ste:6708"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:24" version="2" comment="Publisher 2003 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:158"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80632" version="2" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\7.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6740"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:11047" version="3" comment="Adobe Acrobat 7.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7133"/>
+      <state state_ref="oval:org.mitre.oval:ste:5564"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10869" version="1" comment="Works 9.0 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7464"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80655" version="2" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\8.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6808"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10955" version="3" comment="Adobe Acrobat 8.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6931"/>
+      <state state_ref="oval:org.mitre.oval:ste:5266"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:9294" version="3" comment="Microsoft Office XP is installed" check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:1339"/>
+      <state state_ref="oval:org.mitre.oval:ste:4586"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:2327" version="5" comment="Microsoft Office XP OEM is installed" check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:1339"/>
+      <state state_ref="oval:org.mitre.oval:ste:2179"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:27539" version="2" comment="InfoPath 2003 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:12292"/>
+    </registry_test>
+    <file_test id="oval:org.mitre.oval:tst:21031" version="4" comment="mysqld.exe or mysqld-nt.exe exists" check_existence="at_least_one_exists" check="all" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:11786"/>
+    </file_test>
+    <registry_test id="oval:org.mitre.oval:tst:20481" version="3" comment="MySQL 5.0 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:911"/>
+      <state state_ref="oval:org.mitre.oval:ste:6475"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:2420" version="2" comment="Excel 2002 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:1377"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:78902" version="1" comment="Microsoft BizTalk Server 2002 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:23785"/>
+      <state state_ref="oval:org.mitre.oval:ste:19621"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:79767" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\9.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6736"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10300" version="3" comment="Adobe Reader 9.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7175"/>
+      <state state_ref="oval:org.mitre.oval:ste:5659"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:79858" version="2" comment="Microsoft Commerce Server 2002 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:23698"/>
+      <state state_ref="oval:org.mitre.oval:ste:19188"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:113185" version="1" comment="TrueCrypt is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:38970"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80780" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\8.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6272"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10621" version="3" comment="Adobe Reader 8.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7269"/>
+      <state state_ref="oval:org.mitre.oval:ste:5266"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80761" version="2" comment="HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Adobe Acrobat\9.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6858"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10896" version="3" comment="Adobe Acrobat 9.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7189"/>
+      <state state_ref="oval:org.mitre.oval:ste:5659"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:80693" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\7.0\Installer!ENU_GUID exists" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:6200"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:10977" version="3" comment="Adobe Reader 7.x version is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:7253"/>
+      <state state_ref="oval:org.mitre.oval:ste:5564"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:922" version="4" comment="Outlook 2003 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:692"/>
+      <state state_ref="oval:org.mitre.oval:ste:826"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:487" version="5" comment="Microsoft Office 2003 is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:23955"/>
+      <state state_ref="oval:org.mitre.oval:ste:449"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:90161" version="1" comment="Check if HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version (32-bit) is less than 11.1.3000.0" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:28975"/>
+      <state state_ref="oval:org.mitre.oval:ste:25252"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:79659" version="6" comment="SQL Server instances with version greater than 11.0.0.0 and less than 12.0.0.0 exist" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:11792"/>
+      <state state_ref="oval:org.mitre.oval:ste:19503"/>
+      <state state_ref="oval:org.mitre.oval:ste:19160"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:89569" version="1" comment="Check if HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version is less than 11.1.3000.0" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:28893"/>
+      <state state_ref="oval:org.mitre.oval:ste:25252"/>
+    </registry_test>
+    <registry_test id="oval:org.mitre.oval:tst:3653" version="4" comment="a version of Windows for the x64 architecture is installed" check_existence="at_least_one_exists" check="at least one" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <object object_ref="oval:org.mitre.oval:obj:1576"/>
+      <state state_ref="oval:org.mitre.oval:ste:3180"/>
+    </registry_test>
+  </tests>
+  <objects>
+    <registry_object id="oval:org.mitre.oval:obj:29" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\10.0\Outlook\InstallRoot</key>
+      <name>Path</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23649" version="1" comment="The registry holds if Microsoft SQL Server 2000 is installed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft SQL Server 2000</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7029" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{94F9723E-900A-43C5-8F4E-AD2D2ED09273}</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:158" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\11.0\Publisher\InstallRoot</key>
+      <name>Path</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7133" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="all" var_ref="oval:org.mitre.oval:var:503"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6740" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Adobe Acrobat\7.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7464" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Works\9.0</key>
+      <name>INSTALLDIR</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6931" version="2" comment="Version of Adobe Acrobat 8 installed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="all" var_ref="oval:org.mitre.oval:var:798"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6808" version="2" comment="Adobe Acrobat 8 ENU_GUID key" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Adobe Acrobat\8.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:1339" version="3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^Software\\Microsoft\\Office\\10\.0\\Registration\\.*$</key>
+      <name>ProductID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:12292" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\11.0\InfoPath\InstallRoot</key>
+      <name>Path</name>
+    </registry_object>
+    <file_object id="oval:org.mitre.oval:obj:11786" version="4" comment="Full path to MySQL executable" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <path var_ref="oval:org.mitre.oval:var:349" var_check="at least one"/>
+      <filename operation="pattern match">^mysqld(|-nt)\.exe$</filename>
+    </file_object>
+    <registry_object id="oval:org.mitre.oval:obj:11992" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\MySQL AB\\MySQL Server [0-9]\.[0-9]$</key>
+      <name>Location</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:911" version="3" comment="Visio 2010 InstallRoot" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:org.mitre.oval:obj:41928</object_reference>
+        <object_reference>oval:org.mitre.oval:obj:41329</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:41928" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\.*$</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:41329" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\.*$</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:1377" version="3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\10.0\Excel\InstallRoot</key>
+      <name xsi:nil="true"/>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23785" version="1" comment="Microsoft BizTalk Server 2002 Registry" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:org.mitre.oval:obj:23114</object_reference>
+        <object_reference>oval:org.mitre.oval:obj:23766</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23766" version="1" comment="Registry key for Microsoft BizTalk Server 2002" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\BizTalk Server\1.0</key>
+      <name>ProductName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23114" version="1" comment="Registry key for Microsoft BizTalk Server 2002 (32bit view)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\BizTalk Server\1.0</key>
+      <name>ProductName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7175" version="2" comment="Registry key holds Adobe Reader 9 Series DisplayVersion (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="at least one" var_ref="oval:org.mitre.oval:var:864"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6736" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\9.0\Installer!ENU_GUID (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Acrobat Reader\9.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23698" version="2" comment="Microsoft Commerce Server 2002 Registry" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:org.mitre.oval:obj:23760</object_reference>
+        <object_reference>oval:org.mitre.oval:obj:1436</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23760" version="2" comment="Registry key for HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\.*!DisplayName (windows_view='32_bit')" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\.*$</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:1436" version="3" comment="Registry key for HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\.*!DisplayName" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\.*$</key>
+      <name>DisplayName</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:38970" version="1" comment="Registry key holds TrueCrypt DisplayVersion (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\TrueCrypt</key>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7269" version="2" comment="Registry key holds Adobe Reader 8 Series DisplayVersion (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="at least one" var_ref="oval:org.mitre.oval:var:661"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6272" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\8.0\Installer!ENU_GUID (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Acrobat Reader\8.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7189" version="2" comment="Version of Adobe Acrobat 9 installed" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_check="all" var_ref="oval:org.mitre.oval:var:614"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6858" version="2" comment="Adobe Acrobat 9 ENU_GUID" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Adobe Acrobat\9.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:7253" version="2" comment="Registry key holds Adobe Reader 7 Series DisplayVersion (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key var_ref="oval:org.mitre.oval:var:708" var_check="at least one"/>
+      <name>DisplayVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:6200" version="2" comment="Registry key HKEY_LOCAL_MACHINE\SOFTWARE\Adobe\Acrobat Reader\7.0\Installer!ENU_GUID (32 bit)" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Adobe\Acrobat Reader\7.0\Installer</key>
+      <name>ENU_GUID</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:692" version="2" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\11.0\Outlook\InstallRoot</key>
+      <name>Path</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23955" version="2" comment="Office 2003 InstallRoot InstallCount" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:org.mitre.oval:obj:418</object_reference>
+        <object_reference>oval:org.mitre.oval:obj:23702</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:418" version="3" comment="Office 2003 InstallRoot!InstallCount registry key" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\11.0\Common\InstallRoot</key>
+      <name>InstallCount</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:23702" version="1" comment="32 bit Office 2003 InstallRoot!InstallCount registry key" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SOFTWARE\Microsoft\Office\11.0\Common\InstallRoot</key>
+      <name>InstallCount</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:28975" version="1" comment="Registry key HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version (32-bit) exists" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL11\..*\\Setup$</key>
+      <name>Version</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:11792" version="7" comment="the versions of Microsoft SQL Server instances" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <set xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5">
+        <object_reference>oval:org.mitre.oval:obj:26674</object_reference>
+        <object_reference>oval:org.mitre.oval:obj:26798</object_reference>
+      </set>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:26798" version="5" comment="the versions of 32 bit Microsoft SQL Server instances" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <behaviors windows_view="32_bit"/>
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL.*\..*\\MSSQLServer\\CurrentVersion$</key>
+      <name>CurrentVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:26674" version="5" comment="the versions of Microsoft SQL Server instances" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL.*\..*\\MSSQLServer\\CurrentVersion$</key>
+      <name>CurrentVersion</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:28893" version="1" comment="Registry key HKLM\Software\Microsoft\Microsoft SQL Server\$Instance Names\Setup!Version exists" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key operation="pattern match">^SOFTWARE\\Microsoft\\Microsoft SQL Server\\MSSQL11\..*\\Setup$</key>
+      <name>Version</name>
+    </registry_object>
+    <registry_object id="oval:org.mitre.oval:obj:1576" version="1" comment="This registry key identifies the architecture on the system" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <hive>HKEY_LOCAL_MACHINE</hive>
+      <key>SYSTEM\CurrentControlSet\Control\Session Manager\Environment</key>
+      <name>PROCESSOR_ARCHITECTURE</name>
+    </registry_object>
+  </objects>
+  <states>
+    <registry_state id="oval:org.mitre.oval:ste:988" version="3" comment="Value matches a string containing Office10" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^.*[Oo][Ff][Ff][Ii][Cc][Ee]10.*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:5417" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value>Microsoft Visio Viewer 2002</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:6708" version="1" comment="The registry key matches with Apache HTTP Server 1.3" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^Apache HTTP Server 1\.3\..*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:4586" version="2" comment="Regex that matches a string containing numbers separated by a hyphen" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^.[0-9]+-.[0-9]+-.[0-9]+-.[0-9]+$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:2179" version="3" comment="Regex that matches a string containing -OEM-" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^.*-OEM-.*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:6475" version="1" comment="MySQL 5.0 check" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value>MySQL Server 5.0</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:19621" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value>Microsoft BizTalk Server 2002</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:19188" version="1" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^Microsoft Commerce Server 2002.*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:5266" version="2" comment="Regex matching the version 8.*" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^8\..*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:5659" version="2" comment="Regex matching the version 9.*" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^9\..*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:5564" version="2" comment="Regex matching the version 7.*" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^7\..*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:826" version="3" comment="Value matches a string containing Office11" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^.*[Oo][Ff][Ff][Ii][Cc][Ee]11.*$</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:449" version="4" comment="Registry value is gt 0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value datatype="int" operation="greater than">0</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:19503" version="1" comment="Version is greater than 11.0.0.0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value datatype="version" operation="greater than">11.0.0.0</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:19160" version="1" comment="Version is less than 12.0.0.0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value datatype="version" operation="less than">12.0.0.0</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:25252" version="1" comment="Version is less than 11.1.3000.0" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value datatype="version" operation="less than">11.1.3000.0</value>
+    </registry_state>
+    <registry_state id="oval:org.mitre.oval:ste:3180" version="4" comment="amd64 architecture" xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#windows">
+      <value operation="pattern match">^[Aa][Mm][Dd]64$</value>
+    </registry_state>
+  </states>
+  <variables>
+    <local_variable id="oval:org.mitre.oval:var:503" version="2" comment="Adobe Acrobat Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6740"/>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:798" version="2" comment="Adobe Acrobat Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6808"/>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:349" version="3" comment="Path to MySQL bin directory" datatype="string">
+      <concat>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:11992"/>
+        <literal_component>bin</literal_component>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:864" version="2" comment="Adobe Reader Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6736"/>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:661" version="2" comment="Adobe Reader Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6272"/>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:614" version="2" comment="Adobe Acrobat Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6858"/>
+      </concat>
+    </local_variable>
+    <local_variable id="oval:org.mitre.oval:var:708" version="2" comment="Adobe Reader Key" datatype="string">
+      <concat>
+        <literal_component>SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</literal_component>
+        <object_component item_field="value" object_ref="oval:org.mitre.oval:obj:6200"/>
+      </concat>
+    </local_variable>
+  </variables>
+</oval_definitions>
